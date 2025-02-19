@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="guarderia de perros, cuidado de mascotas, perros">
+    <meta name="description" content="La mejor guardería de perros, cuidamos a tu mejor amigo con amor y profesionalismo.">
+    <meta name="author" content="">
+    <title>Guardería de Perros</title>
+    <!-- Slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive style -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="hero_area">
+        <!-- Header section -->
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" alt="">
+                        <span>Guardería de Perros</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <!-- End header section -->
+
+        <!-- Slider section -->
+        <section class="slider_section position-relative">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4 offset-md-2">
+                                    <div class="slider_detail-box">
+                                        <h1>Profesionales <span>al Cuidado de tu Mascota</span></h1>
+                                        <p>En nuestra guardería ofrecemos el mejor cuidado para tu perro. ¡Tu mejor amigo está en las mejores manos!</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="slider_img-box">
+                                        <img src="images/slider-img.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4 offset-md-2">
+                                    <div class="slider_detail-box">
+                                        <h1>Instalaciones <span>Seguras y Cómodas</span></h1>
+                                        <p>Contamos con áreas de juego, descanso y atención veterinaria para el bienestar de tu mascota.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="slider_img-box">
+                                        <img src="images/slider-img2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End slider section -->
+
+        <!-- Main content -->
+        <main class="container">
+            <section>
+                <h2 class="text-center my-4">La Mejor Guardería de Perros</h2>
+                <p class="text-center">En nuestra guardería ofrecemos el mejor cuidado para tu mascota. Contamos con instalaciones seguras, personal capacitado y actividades recreativas para que tu perro se sienta como en casa. ¡Tu mejor amigo está en las mejores manos!</p>
+            </section>
+
+            <section>
+                <h2 class="text-center my-4">Gestión de Perros</h2>
+                <form action="conexion.php" method="POST" class="form-inline justify-content-center">
+                    <div class="form-group mx-2">
+                        <label for="nombre" class="mr-2">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required>
+                    </div>
+                    <div class="form-group mx-2">
+                        <label for="codigo" class="mr-2">Código:</label>
+                        <input type="text" id="codigo" name="codigo" class="form-control" required>
+                    </div>
+                    <div class="form-group mx-2">
+                        <label for="raza" class="mr-2">Raza:</label>
+                        <input type="text" id="raza" name="raza" class="form-control" required>
+                    </div>
+                    <div class="form-group mx-2">
+                        <label for="edad" class="mr-2">Edad:</label>
+                        <input type="number" id="edad" name="edad" class="form-control" required>
+                    </div>
+                    <div class="form-group mx-2">
+                        <button type="button" class="btn btn-info">VER</button>
+                        <button type="button" class="btn btn-warning">EDITAR</button>
+                        <button type="button" class="btn btn-success">ACTUALIZAR</button>
+                        <button type="button" class="btn btn-danger">ELIMINAR</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer section -->
+        <footer class="footer_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>Guardería de Perros &copy; 2025 - Cuidamos a tu mejor amigo</p>
+                        <a href="#" class="btn btn-secondary">Ir arriba</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
